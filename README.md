@@ -1,3 +1,15 @@
+### Escuela Colombiana de Ingeniería
+### Arquiecturas de Software
+
+---
+
+### Juan David Zambrano Gonzalez
+
+---
+
+## Construccion de un tablero interactivo que permita a múltiples usuarios dibujar en un tablero compartido.
+
+
 1. Crear una aplicación java básica usando maven.
 
 ![alt text](/img/image.png)
