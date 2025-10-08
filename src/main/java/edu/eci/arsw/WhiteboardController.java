@@ -15,7 +15,7 @@ public class WhiteboardController {
     private final AtomicLong nextId = new AtomicLong(1);
     private volatile long clearedAt = 0;
 
-    // 1. Asignar color único por sesión
+    //Asignar color único por sesión
     @GetMapping("/mycolor")
     public Map<String, String> myColor(HttpSession session) {
         String color = (String) session.getAttribute("color");
@@ -26,7 +26,7 @@ public class WhiteboardController {
         return Collections.singletonMap("color", color);
     }
 
-    // 2. Estado del tablero
+    //Estado del tablero
     @GetMapping("/state")
     public Map<String, Object> state() {
         Map<String, Object> res = new HashMap<>();
@@ -35,7 +35,7 @@ public class WhiteboardController {
         return res;
     }
 
-    // 3. Agregar un trazo
+    //Agregar un trazo
     @PostMapping("/stroke")
     public Map<String, Long> addStroke(@RequestBody Stroke s) {
         s.id = nextId.getAndIncrement();
@@ -43,7 +43,7 @@ public class WhiteboardController {
         return Collections.singletonMap("id", s.id);
     }
 
-    // 4. Borrar el tablero globalmente
+    //Borrar el tablero globalmente
     @PostMapping("/clear")
     public void clearBoard() {
         strokes.clear();
@@ -55,7 +55,6 @@ public class WhiteboardController {
         return String.format("#%02x%02x%02x", r.nextInt(256), r.nextInt(256), r.nextInt(256));
     }
 
-    // --- Clases auxiliares para serialización JSON ---
     public static class Stroke {
         public long id;
         public String color;

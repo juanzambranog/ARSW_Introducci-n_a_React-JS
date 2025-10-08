@@ -1,1 +1,4 @@
 edu/eci/arsw/WebSiteController.class
+edu/eci/arsw/WhiteboardController.class
+edu/eci/arsw/WhiteboardController$Stroke.class
+edu/eci/arsw/WhiteboardController$Point.class

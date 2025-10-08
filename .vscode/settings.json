@@ -1,0 +1,4 @@
+{
+    "appService.preDeployTask": "package:whiteboard",
+    "appService.deploySubpath": "target/whiteboard-1.0-SNAPSHOT.jar"
+}

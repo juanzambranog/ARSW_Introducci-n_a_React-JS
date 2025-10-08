@@ -4,7 +4,7 @@ let currentStroke = null;
 let clearedAt = 0;
 
 function setup() {
-  const canvas = createCanvas(800, 600);
+  const canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('canvasHolder');
   background(255);
 
