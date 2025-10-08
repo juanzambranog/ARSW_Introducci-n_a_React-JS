@@ -298,4 +298,4 @@ Su objetivo es permitir que cada usuario dibuje en la pantalla, enviar los trazo
 
 ![alt text](/img/image-13.png)
 ![alt text](/img/image-14.png)
-
+![alt text](/img/image-15.png)
